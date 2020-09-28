@@ -28,14 +28,10 @@ type Card struct {
 	Active     bool
 }
 
-// Category represents type of payments
-type Category string
-
-// Payment is a type to represent information about payments
+// Payment stores amounts with respective ids
 type Payment struct {
-	ID       int
-	Amount   Money
-	Category Category
+	ID     int
+	Amount Money
 }
 
 // PaymentSource stores type, number and balance of cards
