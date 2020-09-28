@@ -34,7 +34,6 @@ type Category string
 // Status represents payments' status
 type Status string
 
-// Some const statuses
 const (
 	StatusOk         Status = "OK"
 	StatusFail       Status = "FAIL"

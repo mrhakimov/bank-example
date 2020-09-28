@@ -34,19 +34,11 @@ type Category string
 // Status represents payments' status
 type Status string
 
-// Some const statuses
-const (
-	StatusOk         Status = "OK"
-	StatusFail       Status = "FAIL"
-	StatusInProgress Status = "INPROGRESS"
-)
-
 // Payment is a type to represent information about payments
 type Payment struct {
 	ID       int
 	Amount   Money
 	Category Category
-	Status   Status
 }
 
 // PaymentSource stores type, number and balance of cards
